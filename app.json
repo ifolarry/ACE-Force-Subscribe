@@ -1,0 +1,56 @@
+{
+    "name": "ACE - Force Subscribe Bot",
+    "description": "Python Based Telegram Bot To Force Users to Subscribe a Channel",
+    "logo": "",
+    "keywords": [
+        "telegram",
+        "pyrogram",
+        "pyrogrambot",
+        "telegram-bot",
+        "FSub",
+        "ForceSubscribe"
+    ],
+    "repository": "https://github.com/TheFlashSpeedster/ACE-Force-Subscribe",
+    "website": "https://t.me/ACE_ML",
+    "success_url": "https://t.me/ACE_ML",
+    "env": {
+        "API_HASH": {
+            "description": "Get it from my.telegram.org",
+            "value": "",
+            "required": true
+        },
+        "APP_ID": {
+            "description": "Get it from my.telegram.org",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Get it from @BotFather",
+            "value": "",
+            "required": true
+        },
+        "UPDATES_CHANNEL": {
+            "description": "Updates Channel ID",
+            "value": "",
+            "required": false
+        },
+        "SUDO_USERS": {
+            "description": "Sudo User ID",
+            "value": "",
+            "required": false
+        },
+        "DATABASE_URL": {
+            "description": "PostgreSQL Database URL from ElephantSQL",
+            "value": "",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python",
+            "versions": {
+                "python": "3.11.6"
+            }
+        }
+    ]
+}
